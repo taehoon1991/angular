@@ -1,28 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from
-  '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 
+import { RoutingModule } from './routing/routing.module';
 import { AppComponent } from './app.component';
 import { ZoomDirective } from './zoom.directive';
 import { ContainerComponent } from './container/container.component';
 import { ChildComponent } from './child/child.component';
-import { AnimationComponent } from './animation/animation.component';
-import { AnimatedComponent } from './animation/animated/animated.component';
+import { HttpComponent } from './http/http.component';
+import { RoutingtestComponent } from './routingtest/routingtest.component';
+import { Route2Component } from './routingtest/route2/route2.component';
+import { HomeComponent } from './routingtest/home/home.component';
 
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
     ZoomDirective,
     ContainerComponent,
     ChildComponent,
-    AnimationComponent,
-    AnimatedComponent
+    HttpComponent,
+    RoutingtestComponent,
+    Route2Component,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    HttpModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
