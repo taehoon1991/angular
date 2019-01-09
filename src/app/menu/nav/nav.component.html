@@ -1,0 +1,12 @@
+<div calss="menu_zone">
+  <ul calss="menu_inner">
+    <li *ngFor="let dapt1 of depths1; let i = index">
+      <a>{{dapt1.text}}</a>
+      <ul>
+        <li *ngFor="let depth2 of depths2[i]">
+          <a routerLink="/{{depth2.url}}">{{depth2.text}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

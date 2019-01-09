@@ -1,33 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from "@angular/http";
 
-import { RoutingModule } from './routing/routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ZoomDirective } from './zoom.directive';
 import { ContainerComponent } from './container/container.component';
-import { ChildComponent } from './child/child.component';
-import { HttpComponent } from './http/http.component';
-import { RoutingtestComponent } from './routingtest/routingtest.component';
-import { Route2Component } from './routingtest/route2/route2.component';
-import { HomeComponent } from './routingtest/home/home.component';
+import { PromiseComponent } from './promise/promise.component';
+import { SharedComponent } from './shared/shared.component';
+import { BadguysComponent } from './shared/badguys/badguys.component';
+import { GoodGuysComponent } from './shared/good-guys/good-guys.component';
+import { MenuComponent } from './menu/menu.component';
+import { NavComponent } from './menu/nav/nav.component';
 
- 
+
 @NgModule({
   declarations: [
     AppComponent,
     ZoomDirective,
     ContainerComponent,
-    ChildComponent,
-    HttpComponent,
-    RoutingtestComponent,
-    Route2Component,
-    HomeComponent
+    PromiseComponent,
+    SharedComponent,
+    BadguysComponent,
+    GoodGuysComponent,
+    MenuComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    RoutingModule
+    FormsModule,
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
