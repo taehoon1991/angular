@@ -15,7 +15,7 @@ export class NavComponent implements OnInit {
       'url': 'page2',
       'text': 'page 2'
     }
-  ]
+  ];
   // 2 depth
   depths2 = [
     [
@@ -30,6 +30,9 @@ export class NavComponent implements OnInit {
         'text': 'page 2-2'
       }
     ]
-  ]
+  ];
+  constructor() { }
+  ngOnInit() {
+  }
 
 }
